@@ -1,0 +1,191 @@
+@import url(/css/header.css);
+@import url(/css/footer.css);
+@import url(/css/hero.css);
+@import url(/css/about__us.css);
+@import url(/css/feedback.css);
+@import url(/css/assort.css);
+@import url(/css/contact.css);
+@import url(/css/callback.css);
+@import url(/css/glass__partitions.css);
+@import url(/css/glass__partitions__wprint.css);
+@import url(/css/glass__shelves.css);
+@import url(/css/glass__cabinets.css);
+@import url(/css/custom__glazing.css);
+@import url(/css/custom__mirror.css);
+
+@font-face { font-family: "Bahnschrift"; src: url(/fonts/bahnschrift.ttf); color: #292929; }
+@font-face { font-family: "Comfortaa-Medium"; src: url(/fonts/Comfortaa-Medium.ttf); color: #292929; }
+@font-face { font-family: "Comfortaa-SemiBold"; src: url(/fonts/Comfortaa-SemiBold.ttf); color: #292929; }
+@font-face { font-family: "Comfortaa"; src: url(/fonts/Comfortaa-VariableFont_wght.ttf); color: #292929; }
+@font-face { font-family: "Misto"; src: url(/fonts/Misto.ttf); color: #292929; }
+
+/* CSS ПАРАЛЛАКС */
+.feedback
+{
+    background: url(/img/home/someQuestions.png) no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+
+    height: 720px;
+}
+
+/* СТРЕЛОЧКА НАВЕРХ */
+#toTop
+{
+    width: 60px;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    display:none;
+    font-size:40px;
+    cursor: pointer;
+}
+
+/* МОДАЛКА */
+.modal-container {
+    position: fixed;
+    left: 0;
+    top: 0; 
+    width: 100vw;
+    height: 100vh; 
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none; 
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    width: 100%; 
+    height: 100%; 
+    max-width: 500px; 
+    max-height: 400px; 
+    background-color: #fff; 
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+  }
+  
+  .modal-container.is-open { 
+    pointer-events: all; 
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal__title
+  {
+    font-family: "Bahnschrift";
+    color: #292929;
+    font-size: 50px;
+    text-align: center;
+  }
+  .modal__text
+  {
+    font-family: "Comfortaa";
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+  /* СЛАЙДЕР */
+  .sponsors__title { text-align: center; }
+.sponsors__img { width: 100%; }
+.wrapper
+{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.slider-wrapper
+{
+    width: 100%;
+    height: 720px;
+    position: relative;
+    box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.75);
+}
+#btn-prev,
+#btn-next
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background-color: grey;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+}
+#btn-prev:hover,
+#btn-next:hover { opacity: 0.6; }
+#btn-next
+{
+    left: auto;
+    right: 0;
+}
+.slide
+{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.slide.active { display: block; }
+.slide > img
+{
+    width: 100%;
+    height: 100%;
+}
+.dots-wrapper
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 200px;
+}
+.dot.active { background-color: #d26501; }
+span
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fed99f;
+    margin-right: 10px;
+    cursor: pointer;
+}
+span:last-child { margin-right: 0; }
+
+@media(max-width: 768px)
+{
+    .sponsors { height: 600px; }
+    .dots-wrapper { margin-bottom: 40px; }
+}
+
+  /* МЕДИАЗАПРОС */
+@media(max-width: 768px)
+{
+    .modal__title
+    {
+      font-family: "Bahnschrift";
+      color: #292929;
+      font-size: 40px;
+      text-align: center;
+    }
+    .modal__text
+    {
+      font-family: "Comfortaa";
+      font-size: 20px;
+      padding: 0 20px 0 20px;
+      text-align: center;
+    }
+}

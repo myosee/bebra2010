@@ -1,0 +1,152 @@
+@media(max-width: 768px)
+{
+    .header__list
+    {
+        flex-flow: column;
+    }
+
+    /* МЕНЮ-БУРГЕР */
+    #menu__toggle
+    {
+        opacity: 0;
+    }
+
+    .menu__btn
+    {
+        display: flex;
+        align-items: center;
+        width: 35px;
+        height: 22px;
+        z-index: 99;
+        position: fixed;
+        right: 20px;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after
+    {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #292929;
+    }
+    .menu__btn > span::after
+    {
+        content: "";
+        top: 8px;
+    }
+    .menu__btn > span::before
+    {
+        content: "";
+        top: -8px;
+    }
+
+    .header__list-item
+    {
+        list-style-type: none;
+        margin: 5px;
+    }
+    .header__list
+    {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* padding: 50px 0; */
+        text-align: center;
+        background-color: #ffeac7;
+        width: 100%;
+
+        height: 30%;
+        display: flex;
+        justify-content: center;
+
+        transition: .5s;
+    }
+    #menu__toggle:checked ~ .menu__btn span
+    {
+        transform: rotate(45deg);
+        transition: .5s;
+    }
+    #menu__toggle:checked ~ .menu__btn span::before
+    {
+        top: 0;
+        transform: rotate(90deg);
+        transition: .2s;
+    }
+    #menu__toggle:checked ~ .menu__btn span::after
+    {
+        top: 0;
+        transform: rotate(0deg);
+        transition: .5s;
+    }
+    #menu__toggle:checked ~ .header__list
+    {
+        right: 0;
+        transition: .5s;
+    }
+    /* БУРГЕР С ВИДОСА */
+    .header__list-item a
+    {
+        text-decoration: none;
+        font-family: 'Rubik Mono One';
+        color: #292929;
+        font-size: x-large;
+        text-align: center;
+    }
+    .header__list-item
+    {
+        border-bottom: 2px solid #292929;
+    }
+    .active a
+    {
+        pointer-events: none;
+        background-color: #fed99f;
+        opacity: 0.8;
+    }
+    .header__list-item a:hover
+    {
+        background-color: #fed99f;
+        transition: 0.2s
+    }
+}
+
+@media(min-width: 769px)
+{
+    #menu__toggle,
+    .menu__btn
+    {
+        display: none;
+    }
+    .header__list > .active { list-style-image: url(/img/header/D26501.png); }
+    .header__list
+    {
+        list-style-image: url(/img/header/FED99F.png);
+        display: flex;
+        width: 370px;
+        justify-content: space-around;
+    }
+    .header__list-item a
+    {
+        height: fit-content;
+        text-decoration: none;
+        font-family: 'Rubik Mono One';
+        color: #292929;
+    }
+    .header__list-item a:hover { color: #757575; transition: color 0.2s; }
+}
+
+header
+{
+    background-color: #f2f2f2;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.header__menu
+{
+    display: flex;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+}

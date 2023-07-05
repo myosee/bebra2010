@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- БУТСТРАП -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <!-- NORMALIZE.CSS -->
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <title> AAAAAAAAAAAAAAAAAAAAA </title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> <!-- подключение аякса -->
+    <script src="js/jquery-2.2.3.min.js"></script> <!-- подключение jquery -->
+</head>
+<body>
+
+    <div class="modal-container">
+        <!-- Окно модалки -->
+        <div class="modal-content">
+            <p class="modal__title"> Поздравляю! </p>
+            <p class="modal__text"> Ты попался на <b>болванку</b>, твой звонок "переведен" куда-нибудь. Хорошего дня! </p>
+            <input type="button" value="ЗАКРЫТЬ" class="btn btn-dark form-control-lg close">
+        </div>
+    </div>
+
+    <!-- ПЛАВНЫЕ ЯКОРЯ -->
+    <header>
+        <nav class="scrollto">
+            <ul>
+                <li><a href="#element1">Ссылка-1</a></li>
+                <li><a href="#element2">Ссылка-2</a></li>
+                <li><a href="#element3">Ссылка-3</a></li>
+            </ul>
+        </nav>
+        
+        <section id="element1" class="fart">Секция-1</section>
+        <section id="element2" class="fart">Секция-2</section>
+        <section id="element3" class="fart">Секция-3</section>
+
+<!-- бургер с видоса??? -->
+        <div class="container">
+            <nav class="header__menu">
+                <a href="/index.html"> <img src="/img/home/LOGO.svg" alt="logo"> </a>
+                
+                <!-- бургер с видоса! -->
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                
+                <ul class="header__list">
+                    <li class="header__list-item active"><a href="/index.html"> HOME </a></li>
+                    <li class="header__list-item"><a href="/html/aboutus.html"> ABOUT US </a></li>
+                    <li class="header__list-item"><a href="/html/order.html"> ORDER </a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="toTop"> ☝ </div> <!-- стрелочка наверх -->
+        <div class="hero-img"></div> <!-- параллакс -->
+        <h1 class="hidden"> Интернет магазин СТЕКЛО </h1> <!-- обязательный скрытый H1 -->
+        <!-- КАРТА -->
+        <section class="KARTA">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5ec5d40cd3aa8540d8a7c5d7929fe4334d89fc844041c5db22b6fec84e47cbee&amp;width=100%25&amp;height=368&amp;lang=ru_RU&amp;scroll=true"></script>
+        </section>
+
+        <!-- СЛАЙДЕР -->
+        <section class="sponsors wrapper">
+            <h2 class="sponsors__title"> НАШИ СПОНСОРЫ </h2>
+            <section class="sponsors__listImg slider-wrapper">
+                <div class="slide active"><img src="/img/home/sponsors/yamaha.png" alt="yamaha" class="sponsors__img">
+                </div>
+                <div class="slide"><img src="/img/home/sponsors/ONEepiphone.png" alt="epiphone" class="sponsors__img">
+                </div>
+                <div class="slide"><img src="/img/home/sponsors/vox.png" alt="vox" class="sponsors__img"></div>
+                <div class="slide"><img src="/img/home/sponsors/ONEmarshall.png" alt="marshall" class="sponsors__img">
+                </div>
+                <div class="slide"><img src="/img/home/sponsors/ONEjackson.png" alt="jackson" class="sponsors__img"></div>
+                <div class="slide"><img src="/img/home/sponsors/ibanez.webp" alt="ibanez" class="sponsors__img"></div>
+                <div class="slide"><img src="/img/home/sponsors/schecter.jpg" alt="schecter" class="sponsors__img">
+                </div>
+                <div class="slide"><img src="/img/home/sponsors/gibson2.png" alt="gibson" class="sponsors__img"></div>
+                <div class="slide"><img src="/img/home/sponsors/sennheizer.png" alt="sennheizer" class="sponsors__img">
+                </div>
+                <div class="slide"><img src="/img/home/sponsors/pioneer.webp" alt="pioneer" class="sponsors__img"></div>
+                <div class="slide"><img src="/img/home/sponsors/roland.png" alt="roland" class="sponsors__img"></div>
+                <div class="slide"><img src="/img/home/sponsors/ONEfender.png" alt="fender" class="sponsors__img"></div>
+                <div id="btn-prev"></div>
+                <div id="btn-next"></div>
+            </section>
+            <div class="dots-wrapper">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <!-- КНОПКА ДЛЯ МОДАЛКИ -->
+        <button type="button" class="btn btn-dark form-control-lg open">Отправить заявку</button>
+
+        <!-- ОТЗЫВЫ -->
+        <section class="feedback">
+            <div class="title" id="feedback">
+                <h2> ОТЗЫВЫ </h2>
+            </div>
+            <div class="feedback-quote">
+                
+                <ul>
+                    <li>
+                        <div class="fred">
+                            <img src="/img/feedback/freg-again.png" class="feedback-img" alt="Fred Again Feedback">
+                            <blockquote>
+                                <ul>
+                                    <li> ★ </li>
+                                    <li> ★ </li>
+                                    <li> ★ </li>
+                                    <li> ★ </li>
+                                    <li> ★ </li>
+                                </ul>
+                                <p class="main-feedback"> Превосходный сервис </p>
+                                <p class="side-feedback"> Брали стекольный шкафчик на всю семью <br> и не пожалели! </p>
+                            </blockquote>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="habs">
+                            <img src="/img/feedback/habstrakt.png" class="feedback-img" alt="Habstrakt Feedback">
+                            <blockquote>
+                                <ul>
+                                    <li> ★ </li>
+                                    <li> ★ </li>
+                                    <li> ★ </li>
+                                    <li class="no-star"> ★ </li>
+                                    <li class="no-star"> ★ </li>
+                                </ul>
+                                <p class="main-feedback"> Неплохо </p>
+                                <p class="side-feedback"> Покупал стеклянную дверь для студии. <br> Студия сгорела, а дверь нет </p>
+                            </blockquote>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="qarti">
+                            <img src="/img/feedback/qarti.png" class="feedback-img" alt="Qarti Feedback">
+                            <blockquote>
+                                <ul>
+                                    <li> ★ </li>
+                                    <li> ★ </li>
+                                    <li> ★ </li>
+                                    <li> ★ </li>
+                                    <li class="no-star"> ★ </li>
+                                </ul>
+                                <p class="main-feedback"> Рекомендую! </p>
+                                <p class="side-feedback"> Каждый раз беру там линзы на заказ и ещё <br> никогда не ошибался </p>
+                            </blockquote>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sonny">
+                            <img src="/img/feedback/skrillex.png" class="feedback-img" alt="Skrillex Feedback">
+                            <blockquote>
+                                <ul>
+                                    <li> ★ </li>
+                                    <li> ★ </li>
+                                    <li class="no-star"> ★ </li>
+                                    <li class="no-star"> ★ </li>
+                                    <li class="no-star"> ★ </li>
+                                </ul>
+                                <p class="main-feedback"> Что ж </p>
+                                <p class="side-feedback"> Очень неплохие перегородки стоят у нас прямо сейчас в аэропорту, но через них все видно </p>
+                            </blockquote>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- КОПИРАЙТ -->
+    <footer>
+        <p class="not_mobile">
+            All right reserved, by using this site you accept privacy policy, terms and conditions
+            <br> © ООО “СТЕКЛО”, 2002
+            <br> Москва, 1-я Стекольная улица, 7с2, 89214276905, pochtamailrumail@mail.ru
+        </p>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="/main.js"></script>
+</body>
+</html>
